@@ -1,0 +1,131 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class ="headLineAndUI">
+        <div id="ui-elements">
+            <!-- ANIMATION SPALTE -->
+            <section class="column">
+                <h3 class="section-title bento-box">ANIMATION</h3>
+
+                <!-- Format -->
+                <div class="bento-box">
+                    <label for="format">FORMAT</label>
+                    <select id="format" class="bottom-object">
+                            <option value="rect">QUADRATISCH</option>
+                            <option value="reel">HANDY</option>
+                            <option value="poster">PLAKAT</option>
+                        </select>
+                    </select>
+                </div>
+
+                <!-- Text-Input -->
+                <div class="bento-box">
+                    <label for "textArea">ANIMIERTER TEXT</label>
+                    <textarea id="textArea">HIER TEXT EINFÜGEN</textarea>
+
+                    <!-- <label for "selectTextStyle">SCHRIFTSTIL</label>
+                    <select name="textStyle" id="selectTextStyle" class = "bottom-object">
+                        <option value="classic">KLASSISCH</option>
+                        <option value="old">ALT</option>
+                        <option value ="blur">BLUR</option>
+                        <option value ="comic">COMIC</option>
+                    </select> -->
+                </div>
+                
+                <div class ="bento-box">
+                    <label for "selectMovement">BEWEGUNG</label>
+
+                    <select name="textGrid" id="selectMovement" >
+                        <option value="none">KEINE BEWEGUNG</option>
+                        <option value="tanWave">SWOOSH</option>
+                        <option value ="curve">KURVE</option>
+                        <option value ="wave">WELLE</option>
+                        <option value="flag">FLAGGE</option>
+                        <option value ="randomType">RANDOM</option>
+                    </select>
+
+                    <tag>BEWEGUNG 2</tag>
+                    <select name="textGrid" id="selectSecondMovement" class = "bottom-object">
+                        <option value="none">KEINE BEWEGUNG</option>
+                        <option value="rotation">ROTATION</option>
+                        <option value="scale">SKALIERUNG</option>
+                    </select>
+                </div>
+
+                <div class="bento-box">
+                    <label for="moodSelect">STIMMUNGSBILD</label>
+                    <select id="moodSelect" >
+                            <option value="color1">AUFDRINGLICH</option>
+                            <option value="color2">VIBRANT</option>
+                            <option value="color3">BITTER-SÜß</option>
+                            <option value="color4">VERSTIMMT</option>
+                            <option value="color5">MELANCHOLISCH</option>
+                            <option value="color6">AUFREGEND</option>
+                            <option value="color7">WEICH</option>
+                            <option value="color8">INTENSIV</option>
+                            <option value="color9">HART</option>
+                        </select>
+                    </select>
+
+                    
+                    <label for="imageUpload">HINTERGRUND:</label>
+                    <input id = "imageUpload" type="file" size="50" >
+                    
+                    <div id="imageContainer">
+                    <label>HINTERGRUNDBILD ANZEIGEN</label>
+                    <input type="checkbox" id="showImage" class="bottom-object" checked>
+                    </div>
+                </div>
+            </section>
+
+                <!-- TYPOGRAFIE SPALTE -->
+                <section class="column">
+                    <h3 class="section-title bento-box">TYPOGRAFIE</h3>
+
+
+                    <div class="bento-box">
+                        <label for="typeLayoutSelect">LAYOUT</label>
+                        <select id="typeLayoutSelect" class="bottom-object">
+                            <option value="typeLayout1">ANORDNUNG 1</option>
+                            <option value="typeLayout2">ANORDNUNG 2</option>
+                            <option value="typeLayout3">ANORDNUNG 3</option>
+                        </select>
+                    </div>
+
+
+                    <div class="bento-box" id="typography-text-settings">
+                        <label for="headlineText">ÜBERSCHRIFT 1</label>
+                        <textarea id="headlineText" rows="5"></textarea>
+                    
+                        <label for="headline2Text">ÜBERSCHRIFT 2</label>
+                        <textarea id="headline2Text" rows="5"></textarea>
+                    
+                        <label for="subline1Text">UNTERTITEL</label>
+                        <textarea id="subline1Text" class="bottom-object" rows="5"></textarea>
+
+                        <label for="showLogo">LOGO ANZEIGEN</label>
+                        <input type="checkbox" id="showLogo" class="bottom-object">
+                    </div>
+
+
+                    <div class="bento-box">
+                        <label for="imgDownload">DOWNLOAD</label>
+                        <button type="button" id="imgDownload">BILD</button>
+                        <button type="button" id="videoDownload" class="bottom-object">VIDEO</button>
+                    </div>
+                </section>
+                </div>
+        </div>
+    </div>
+    <div id="artboard">
+        <div id="canvasWrapper"></div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+    <script src="./Final.js"></script>
+    <script src="./type_functions.js"></script>
+    <script src="./colors.js"></script>
+</body>
